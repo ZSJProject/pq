@@ -47,6 +47,8 @@ const (
 	T_unknown          Oid = 705
 	T_circle           Oid = 718
 	T__circle          Oid = 719
+	T_macaddr8         Oid = 774
+	T__macaddr8        Oid = 775
 	T_money            Oid = 790
 	T__money           Oid = 791
 	T_macaddr          Oid = 829
@@ -138,6 +140,8 @@ const (
 	T_pg_lsn           Oid = 3220
 	T__pg_lsn          Oid = 3221
 	T_tsm_handler      Oid = 3310
+	T_pg_ndistinct     Oid = 3361
+	T_pg_dependencies  Oid = 3402
 	T_anyenum          Oid = 3500
 	T_tsvector         Oid = 3614
 	T_tsquery          Oid = 3615
@@ -170,6 +174,7 @@ const (
 	T__regnamespace    Oid = 4090
 	T_regrole          Oid = 4096
 	T__regrole         Oid = 4097
+	T_pg_subscription  Oid = 6101
 )
 
 var TypeName = map[Oid]string{
@@ -217,6 +222,8 @@ var TypeName = map[Oid]string{
 	T_unknown:          "UNKNOWN",
 	T_circle:           "CIRCLE",
 	T__circle:          "_CIRCLE",
+	T_macaddr8:         "MACADDR8",
+	T__macaddr8:        "_MACADDR8",
 	T_money:            "MONEY",
 	T__money:           "_MONEY",
 	T_macaddr:          "MACADDR",
@@ -308,6 +315,8 @@ var TypeName = map[Oid]string{
 	T_pg_lsn:           "PG_LSN",
 	T__pg_lsn:          "_PG_LSN",
 	T_tsm_handler:      "TSM_HANDLER",
+	T_pg_ndistinct:     "PG_NDISTINCT",
+	T_pg_dependencies:  "PG_DEPENDENCIES",
 	T_anyenum:          "ANYENUM",
 	T_tsvector:         "TSVECTOR",
 	T_tsquery:          "TSQUERY",
@@ -340,4 +349,5 @@ var TypeName = map[Oid]string{
 	T__regnamespace:    "_REGNAMESPACE",
 	T_regrole:          "REGROLE",
 	T__regrole:         "_REGROLE",
+	T_pg_subscription:  "PG_SUBSCRIPTION",
 }
